@@ -7,11 +7,10 @@
     "dev": "tsc && electron ./js/app",
     "build": "tsc",
     "clean": "rm -r node_modules && rm -r js",
-    "dist": "sh ./scripts/build.sh",
+    "dist:win": "electron-builder --win",
     "dist:mac": "electron-builder --mac",
-    "dist:allother": "$SHELL ./scripts/docker.sh",
-    "dist:snapcraft": "snapcraft push --release=stable ./dist/Gmail\\ Desktop-*.snap",
-    "dist:all": "npm run dist:allother; npm run dist:mac; npm run dist:snapcraft"
+    "dist:lin": "electron-builder --linux && electron-builder --linux snap",
+    "dist:all": "npm run dist:win && npm run dist:mac && npm run dist:lin"
   },
   "devDependencies": {
     "electron": "^9.3.1",
