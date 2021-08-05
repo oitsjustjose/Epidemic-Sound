@@ -29,9 +29,9 @@
   },
   "build": {
     "extends": null,
-    "appId": "com.oitsjustjose.pivotaldesktop",
-    "artifactName": "Pivotal Desktop-${version}.${ext}",
-    "productName": "Pivotal Desktop",
+    "appId": "com.oitsjustjose.epidemicsound.desktop",
+    "artifactName": "epidemic_sound_desktop-${version}.${ext}",
+    "productName": "Epidemic Sound Desktop",
     "electronDownload": {
       "cache": "./cache"
     },
@@ -40,7 +40,7 @@
     },
     "mac": {
       "category": "public.app-category.productivity",
-      "icon": "assets/icons/macOS/pivotal.icns",
+      "icon": "assets/icons/app.png",
       "darkModeSupport": true,
       "hardenedRuntime": true
     },
