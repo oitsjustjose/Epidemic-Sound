@@ -27,6 +27,49 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "build": {
+    "extends": null,
+    "appId": "com.oitsjustjose.pivotaldesktop",
+    "artifactName": "Pivotal Desktop-${version}.${ext}",
+    "productName": "Pivotal Desktop",
+    "electronDownload": {
+      "cache": "./cache"
+    },
+    "appImage": {
+      "category": "public.app-category.productivity"
+    },
+    "mac": {
+      "category": "public.app-category.productivity",
+      "icon": "assets/icons/macOS/pivotal.icns",
+      "darkModeSupport": true,
+      "hardenedRuntime": true
+    },
+    "win": {
+      "icon": "assets/icons/app.png"
+    },
+    "linux": {
+      "icon": "assets/icons/app.png"
+    },
+    "deb": {
+      "icon": "assets/icons/app.png"
+    },
+    "snap": {},
+    "pacman": {
+      "icon": "assets/icons/app.png"
+    },
+    "rpm": {
+      "icon": "assets/icons/app.png"
+    },
+    "freebsd": {
+      "icon": "assets/icons/app.png"
+    },
+    "p5p": {
+      "icon": "assets/icons/app.png"
+    },
+    "apk": {
+      "icon": "assets/icons/app.png"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
