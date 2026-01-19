@@ -1,3 +1,3 @@
-# Epidemic-Sound
+# This Repo has Moved!
 
-A Electron-wrapped desktop app for Epidemic Sound so streamers don't accidentally close it 😆
+This repository has been moved to a [new location!](https://git.oitsjustjose.com/me/Epidemic-Sound)
